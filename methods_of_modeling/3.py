@@ -18,7 +18,7 @@ def main():
     function_str = input("Введите функцию (например, x**2 + sqrt(x)): ")
     lower_bound = float(input("Введите нижнюю границу интегрирования: "))
     upper_bound = float(input("Введите верхнюю границу интегрирования: "))
-    n = 10
+    n = 10 # TODO: add a way to calc N
     # Вычисление интеграла
     result = integrate_trapezoid(func, lower_bound, upper_bound, n, function_str)
     if result is not None:
